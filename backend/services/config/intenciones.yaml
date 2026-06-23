@@ -1,0 +1,117 @@
+# Configuración de intenciones - Fácil de editar
+# Orden = prioridad (primero se evalúa)
+intenciones:
+  - nombre: "HABLAR_CON_HUMANO"
+    palabras_clave:
+      - asesor
+      - humano
+      - persona
+      - hablar con alguien
+      - agente
+      - operador
+      - atencion humana
+    confianza_base: 0.95
+    
+  - nombre: "RECLUTAMIENTO"
+    palabras_clave:
+      - trabajo
+      - vacante
+      - empleo
+      - postular
+      - hoja de vida
+      - hv
+      - busco trabajo
+      - quiero trabajar
+      - proceso
+      - como va mi proceso
+      - estado de mi hoja de vida
+    confianza_base: 0.96
+    
+  - nombre: "INCAPACIDAD"
+    palabras_clave:
+      - incapacidad
+      - incapacitado
+      - medico
+      - enfermo
+      - licencia médica
+      - enfermedad
+      - reposo
+    confianza_base: 0.95
+    
+  - nombre: "DESPRENDIBLE_PAGO"
+    palabras_clave:
+      - desprendible
+      - colilla
+      - pago
+      - nomina
+      - salario
+      - sueldo
+      - pago de nómina
+      - liquidacion
+    confianza_base: 0.95
+    
+  - nombre: "PERMISOS"
+    palabras_clave:
+      - permiso
+      - día libre
+      - familia
+      - permiso remunerado
+      - día de familia
+      - salir temprano
+    confianza_base: 0.90
+    
+  - nombre: "CESANTIAS"
+    palabras_clave:
+      - cesantía
+      - cesantias
+      - retirar cesantías
+      - ahorro
+      - fondo de cesantias
+    confianza_base: 0.92
+    
+  - nombre: "VACACIONES"
+    palabras_clave:
+      - vacaciones
+      - descanso
+      - vacacion
+      - disfrutar vacaciones
+    confianza_base: 0.92
+    
+  - nombre: "CERTIFICACION_LABORAL"
+    palabras_clave:
+      - certificación
+      - constancia
+      - certificado laboral
+      - carta laboral
+    confianza_base: 0.90
+
+  - nombre: "ORIENTACION"
+    palabras_clave:
+      - ayuda
+      - no entiendo
+      - qué puedo hacer
+      - cómo funciona
+      - me ayudas
+      - que hago
+      - opciones
+      - menu
+    confianza_base: 0.85
+
+# Modificadores (no son intenciones principales)
+modificadores:
+  saludos:
+    - hola
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - holi
+    - buenas
+    - saludos
+    - que tal
+  despedidas:
+    - adiós
+    - chao
+    - hasta luego
+    - nos vemos
+    - bye
+    - hasta pronto

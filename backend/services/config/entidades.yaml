@@ -1,0 +1,110 @@
+# Configuración de entidades por intención
+entidades:
+  RECLUTAMIENTO:
+    ciudad:
+      valores:
+        cartagena: cartagena
+        bogotá: bogota
+        bogota: bogota
+        medellín: medellin
+        medellin: medellin
+        cali: cali
+        barranquilla: barranquilla
+        santa marta: santa_marta
+        sincelejo: sincelejo
+      obligatorio: true
+      
+    experiencia:
+      valores:
+        barrido: barrido
+        disposición: disposicion_final
+        disposicion: disposicion_final
+        aseo: aseo
+        limpieza: aseo
+        sin experiencia: sin_experiencia
+        ninguna: sin_experiencia
+      obligatorio: false
+      
+    turno:
+      valores:
+        mañana: manana
+        tarde: tarde
+        noche: noche
+        rotativo: rotativo
+        madrugada: madrugada
+      obligatorio: false
+      
+    vacante_interes:
+      valores:
+        barrido: barrido
+        disposición: disposicion_final
+        disposicion: disposicion_final
+      obligatorio: false
+      
+    zona:
+      valores:
+        norte: norte
+        sur: sur
+        centro: centro
+        oriente: oriente
+        occidente: occidente
+      obligatorio: false
+
+  DESPRENDIBLE_PAGO:
+    mes:
+      valores:
+        enero: enero
+        febrero: febrero
+        marzo: marzo
+        abril: abril
+        mayo: mayo
+        junio: junio
+        julio: julio
+        agosto: agosto
+        septiembre: septiembre
+        octubre: octubre
+        noviembre: noviembre
+        diciembre: diciembre
+      obligatorio: true
+      
+    año:
+      valores:
+        2023: 2023
+        2024: 2024
+        2025: 2025
+        2026: 2026
+      obligatorio: false
+
+  INCAPACIDAD:
+    duracion:
+      patron: r'(\d+)\s*días?'
+      obligatorio: false
+    tiene_pdf:
+      valores:
+        si: true
+        no: false
+        adjunto: true
+      obligatorio: false
+
+  PERMISOS:
+    tipo_permiso:
+      valores:
+        dia_familia: dia_familia
+        remunerado: remunerado
+        no_remunerado: no_remunerado
+        calamidad: calamidad
+      obligatorio: false
+
+# Correcciones ortográficas comunes
+correcciones:
+  cartajena: cartagena
+  cartagenaa: cartagena
+  varrido: barrido
+  barido: barrido
+  disposision: disposicion
+  esperiencia: experiencia
+  manana: mañana
+  tare: tarde
+  nochee: noche
+  desprendible: desprendible
+  colilla: colilla

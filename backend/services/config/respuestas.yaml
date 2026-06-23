@@ -1,0 +1,131 @@
+# Plantillas de respuesta - Fáciles de editar
+# Usa {variables} para insertar valores dinámicos
+
+respuestas:
+  RECLUTAMIENTO:
+    sin_ciudad: |
+      ¡Hola! Con gusto te ayudo a buscar empleo en Proservis.
+      Actualmente tenemos vacantes para operarios de barrido (mañana y tarde)
+      y disposición final (turno rotativo).
+      ¿En qué ciudad vives?
+      
+    con_ciudad_sin_experiencia: |
+      {saludo}Con gusto te ayudo a buscar empleo.
+      ¿Tienes experiencia en barrido o disposición final?
+      
+    con_ciudad_y_experiencia: |
+      {saludo}Perfecto 👍 Veo que vives en {ciudad} y tienes experiencia en {experiencia}.
+      ¿Qué turno prefieres? (mañana, tarde o noche)
+      
+    con_ciudad_experiencia_turno: |
+      {saludo}Genial 👌 Ya tengo tu perfil: vives en {ciudad},
+      tienes experiencia en {experiencia} y disponibilidad en {turno}.
+      ¿Te interesa más barrido o disposición final?
+      
+    completo_sin_hv: |
+      {saludo}¡Excelente perfil! 👍
+      Vives en {ciudad}, tienes experiencia en {experiencia},
+      disponibilidad en {turno} y te interesa {vacante_interes}.
+      Para postularte, solo necesito que me adjuntes tu hoja de vida en PDF.
+      ¿Puedes enviármela?
+      
+    hv_recibida: |
+      ✅ ¡Listo! Tu hoja de vida ha sido recibida.
+      En máximo 3 días hábiles nuestro equipo de psicología revisará tu perfil
+      y te contactará si cumples con los requisitos.
+      ¿Necesitas algo más?
+      
+    consultar_estado: |
+      ✅ Tu hoja de vida ya está en revisión por nuestro equipo de psicología.
+      El tiempo máximo de respuesta es 3 días hábiles.
+      Si ya pasaron más de 3 días, escríbeme 'hablar con humano' para darte seguimiento.
+
+  DESPRENDIBLE_PAGO:
+    sin_mes: |
+      {saludo}Claro que sí. Puedes descargar tu desprendible de pago
+      desde este enlace: [enlace]
+      
+      Si necesitas uno de un mes específico (ejemplo: mayo), dime cuál.
+      
+    con_mes: |
+      {saludo}Por supuesto. Aquí puedes descargar tu desprendible de {mes}{anio}:
+      [enlace]
+
+  INCAPACIDAD:
+    general: |
+      {saludo}Entiendo. Para radicar tu incapacidad médica, recuerda que
+      tienes 2 días hábiles desde su expedición.
+      Por favor adjunta el documento en PDF para procesarlo.
+      
+    con_duracion: |
+      {saludo}Recibido. Tu incapacidad de {duracion} debe radicarse
+      dentro de 2 días hábiles. Adjunta el PDF para continuar.
+
+  PERMISOS:
+    general: |
+      {saludo}Claro. ¿Qué tipo de permiso necesitas?
+      - Día de familia
+      - Permiso remunerado
+      - Permiso no remunerado
+      - Calamidad doméstica
+      
+      Dime cuál y te ayudo con el proceso.
+
+  CESANTIAS:
+    general: |
+      {saludo}Para retirar tus cesantías, necesito que me digas:
+      - ¿Eres colaborador activo o retirado?
+      - ¿Para qué necesitas el retiro? (vivienda, educación, etc.)
+
+  VACACIONES:
+    general: |
+      {saludo}Para solicitar vacaciones, necesito saber:
+      - ¿Cuántos días deseas tomar?
+      - ¿Fecha de inicio deseada?
+      
+      Dime estos datos y te ayudo con el proceso.
+
+  CERTIFICACION_LABORAL:
+    general: |
+      {saludo}Claro. Puedes descargar tu certificación laboral desde este enlace:
+      [enlace]
+
+  ORIENTACION:
+    general: |
+      {saludo}Tranquilo, te explico con calma. Puedo ayudarte con:
+
+      📄 Desprendible de pago (tu colilla)
+      🏥 Radicar incapacidades médicas
+      📋 Solicitar permisos (día de familia, remunerados)
+      💰 Retiro de cesantías
+      🌴 Vacaciones
+      📜 Certificación laboral
+      💼 Buscar empleo (vacantes y hoja de vida)
+
+      ¿Con cuál de estas opciones te ayudo?
+
+  HABLAR_CON_HUMANO:
+    general: |
+      Claro, con gusto te conecto con un asesor humano.
+      ¿Me dices si eres colaborador o candidato?
+      
+    colaborador: |
+      Entiendo. Te voy a conectar con el área de talento humano.
+      Por favor espera un momento, un asesor se comunicará contigo pronto.
+      ⏰ Horario: lunes a viernes 8am a 5pm
+      
+    candidato: |
+      De acuerdo. Te transfiero con nuestro equipo de psicología.
+      Ellos revisarán tu caso y se pondrán en contacto.
+      ⏰ Tiempo de respuesta máximo: 3 días hábiles
+
+  DESPEDIDA:
+    general: |
+      ¡Hasta luego! Fue un gusto ayudarte.
+      Si en el futuro necesitas algo más, aquí estoy. 👋
+
+  DEFAULT:
+    general: |
+      {saludo}¿En qué puedo ayudarte?
+      Puedo ayudarte con desprendibles, incapacidades, permisos,
+      cesantías, vacaciones o búsqueda de empleo.
